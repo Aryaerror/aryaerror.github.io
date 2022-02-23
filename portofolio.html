@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <!--akhir bootstrap icon-->
     <!-- My CSS-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sendiri.css" />
+    
     <title>Title</title>
 
-    <!-- My CSS-->
-    <link rel="stylesheet" href="style.css"
   </head>
   <body id="home">
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">PORTOFOLIO</a>
+        <a class="navbar-brand" href="#" img src="projects/LA.jpg" alt>ARYASASTRA</a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,10 +44,18 @@
     <!--akhir Navbar -->
 
     <!--  jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="photo/utama.jpg" alt="aljauhariyah" width="200"  class="rounded-circle img-thumbnail" />
-      <h2 class="display-4">ARYA SASTRANEGARA</h2>
-      <p class="lead">JL Raya Bekasi KM 17, Kp.Jawa RT003/RW003 NO 02 Kec Cakung Kel Jatinegara</p>
+      </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="card">
+              <img src="img/project/cofe.jpg" class="card-img-top" alt="p1" />
+              <div class="card-body">
+                <Center class="card-text"> ------LA CAFE & BAR</Center>
+              </div>
+            </div>
+          </div>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -96,7 +103,7 @@
         <div class="row">
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/project/website.jpg" class="card-img-top" alt="p1" />
+              <img src="img/project/biji.jpg" class="card-img-top" alt="p1" />
               <div class="card-body">
                 <p class="card-text">Membuat UI/UX dan Disegn website yang menarik dan kekinian yang berinovasi bagus bagi user  </p>
               </div>
@@ -104,7 +111,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/project/spiking.webp" class="card-img-top" alt="p1" />
+              <img src="img/project/kerja.jpg" class="card-img-top" alt="p1" />
               <div class="card-body">
                 <p class="card-text">Mampu Berbicara di depan publik dengan baik dan benar</p>
               </div>
@@ -112,7 +119,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/project/team.webp" class="card-img-top" alt="p1" />
+              <img src="img/project/nongkrong.jpg" class="card-img-top" alt="p1" />
               <div class="card-body">
                 <p class="card-text">mampu berkerja  sama dengan team</p>
               </div>
@@ -136,23 +143,37 @@
         </div>
         <div class="row">
           <div class="col-md-8"></div>
-          <form>
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <form name="dataorang">
             <div class="mb-3">
               <label for="Name" class="form-label">Nama Lengkap</label>
-              <input type="Name" class="form-control" id="Name" aria-describedby="Name">
+              <input type="Name" class="form-control" id="Name" aria-describedby="Name" name="nama">
               
             </div>
             <div class="mb-3">
-              <label for="Email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="Name" aria-describedby="Email">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="Name" aria-describedby="Email" name="email">
             
             </div>
-           
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="mb-3">
+            <label for="text" class="form-label">No Handpone</label>
+            <input type="text"class="form-control" id="number" aria-describedby="number" name="handpone">
+            
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="" rows="3" name="pesan"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-Kirim">Kirim</button>
+
+            <button class="btn btn-primary btn-Loading d-none" type="button" disabled>
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
           </form>
         </div>
       </div>
@@ -162,11 +183,38 @@
     <!--Akhir Contacts-->
     <!--footer-->
     <footer class="bg-primary text-white text-center pb-3" >  
-      <p> Instagram <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/aryasastraa/" class="text-white fw-bold"> aryasastraa </a> </p>
+      <p> Instagram <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/_la.cafe/"
+         class="text-white fw-bold"> ARYASASTRAA </a> </p>
     </footer>
     <!--akhir Footer-->
     <!--Bootstrap JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <!-- Akhir Bootstrap JavaScript-->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwBzDsM_DBiBIUruEkvA6PZPoZNGKKERcep3Cgk9UcvknsEQXAGAYdsr2q0mltovpcLfg/exec';
+      const form = document.forms['dataorang']
+      const btnKirim = document.querySelector('.btn-Kirim');
+      const btnLoading = document.querySelector('.btn-Loading');
+      const myAlert = document.querySelector('.my-alert');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        // ketika tombol kirim di klik 
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+              // tampilkan tombol kirim, hilangkan tombol Loading
+         btnLoading.classList.toggle('d-none');
+         btnKirim.classList.toggle('d-none');
+         //Tampilkan my-Alert 
+         myAlert.classList.toggle('d-none');
+         //Reset classlist 
+         form.reset();
+            console.log('Success!', response)})
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
